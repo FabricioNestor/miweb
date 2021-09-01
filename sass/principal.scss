@@ -1,0 +1,268 @@
+$primary: #806a41;
+$dark: #1a1a1a;
+$border-color:#eee;
+$fondo: rgba(32, 33, 37, 0.20);
+$success: green;
+
+//Bootstrap
+
+@import "../bootstrap/scss/bootstrap";
+
+body {
+    font-family: rama-gothic-e, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.website-title {
+    font-family: scriptorama-markdown-jf, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+a {
+    color: $fondo;
+    &:hover {
+        text-decoration: overline;
+    }
+}  
+
+.nav-link {
+    &:hover{
+        color: $dark;
+    }
+    &.active{
+        color: violet;
+    }
+}
+
+ p{
+     &:last-child {
+         margin-bottom: 0;
+     }
+}
+
+ .products-container{
+   .card{
+     text-align: right;
+     h5{
+         text-transform: capitalize;
+         &::after{
+             content: "";
+             display: block;
+             width: 70px;
+             height: 3px;
+             background:$primary;
+             margin: 15px auto 30px;
+         }
+     }
+     p{
+         color:$primary;
+         font-weight: 500;
+     }
+     }
+}
+
+//*************************************
+
+.principal-post {
+    min-height: 400px;
+}
+
+.principal-post-inner {
+    .principal-post-info{
+        background: $fondo;
+        color: #fff;
+        padding: 10px 35px;
+        h4 {
+            font-size: 20px;
+        }
+        p{
+            font-size: 14px;
+        }
+        .post-meta {
+            font-size: 15px;
+        }
+    }
+    &.principal-post-1{
+        background-image: url("../imagenes/contacto_1.jpg");
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &.principal-post-2{
+        background-image: url("../imagenes/contacto_2.jpg");
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+   //BLOQUE
+.tarjeta {
+    background: #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+
+    .tarjeta__imagen {
+        width: 650px;
+        height: 350px;
+        // margin-right: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        //display: inline-block;
+    }  
+    
+    .tarjeta__img {
+        width: 100%;
+    }
+
+    .tarjeta__titulo {
+        font-family: scriptorama-markdown-jf, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2rem;
+       
+        .tarjeta__enlace {
+           text-decoration: none; 
+           color: #fff;
+           &:hover {
+               color: $primary;
+           }
+        }
+    }
+    .tarjeta__resumen {
+        line-height: 28px;
+        color:$primary;
+        margin-bottom: 20px;
+    }
+}
+
+//BLOQUE
+
+.boton {
+    border: none;
+    min-width: 180px;
+    height: 50px;
+    padding: 0 30px;
+    background: $primary;
+    color: #fff;
+    border-radius: 100px;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+
+    &:hover {
+        text-decoration: none;
+        color: #ccc;
+    }
+}
+
+//MODIFICADORES
+
+.boton--absoluto {
+    position: absolute;
+    right: 20px;
+    bottom: -25px;
+}
+
+.boton--secundario {
+    background: $dark;
+
+    &:hover {
+        background:$primary;
+        color: #ccc;
+    }
+}
+
+
+//FIN DE BOTÓN MODIFICADORES
+
+//BLOQUE DETALLE
+.detalle__texto {
+    color: $primary;
+    font-family: scriptorama-markdown-jf, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+//BLOQUE CARTA
+
+.carta {
+    width: 350px;
+    border: 1px solid rgb(34, 34, 37);
+    border-radius: 10px;
+    padding: 2rem;
+
+    .carta__titulo {
+        font-family: scriptorama-markdown-jf, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .carta__foto {
+        width: 100%;
+        .carta__img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+}
+
+//BLOQUE COCINA
+.cocina__foto {
+   position: relative;
+   width: 500px;
+   height: 500px;
+   overflow: hidden;
+   border: 5px solid rgba(0,0,0,0.3);
+   margin: 0 auto 50px;
+
+    &:hover .cocina__img {
+        left:500px;
+    }
+   
+    .cocina__img {
+        width: 500px;
+        height: 500px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: .5s left cubic-bezier(.64,.57,.67,1.53), 2s;
+        object-fit: cover;
+           
+    }
+
+    .cocina__texto {
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 500px;	
+        height: 500px;
+        display: block;
+        background: #222;
+        color: rgba(255,255,255,.8);
+        padding:30px;
+        z-index: -1;
+
+        .cocina__titulo {
+            font-family: scriptorama-markdown-jf, sans-serif;
+            font-weight: 400;
+            font-style: normal; 
+        }
+    }
+}
+
+

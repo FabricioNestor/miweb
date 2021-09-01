@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/vgz4vtz.css">
+    <link rel="stylesheet" href="css/principal.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row justify-content-lg-between justify-content-center align-items-center py-3">
+                <div class="col col-auto order-2 order-lg-1">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Block</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Portafolio</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg col-auto order-1 order-lg-2 text-center">
+                    <h1>
+                        <a href="#" class="text-dark website-title text-decoration-none">Artisan</a>
+                    </h1>
+                </div>
+                <div class="col col-auto order-3">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="container">
+            <section class="row main-carousel">
+                <div class="col">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="imagenes/slice_3.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/slice_4.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/slice_2.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                   </div>
+                </div>
+            </section>
+
+            <section class="row products-container">
+                <div class="col mt-4 mt-lg-5 mb-4 border-top border-bottom py-3">
+
+                    <ul class="nav nav-pills mb-3 nav-fill" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="pills-todos-tab" data-bs-toggle="pill" data-bs-target="#pills-todos" type="button" role="tab" aria-controls="pills-todos" aria-selected="true">Todos</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Comida de Mar</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contactos</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-todos" role="tabpanel" aria-labelledby="pills-todos-tab">
+
+                            <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+                                <div class="col"> 
+                                  <div class="card h-100">
+                                    <img src="imagenes/comida_1.jpg"  class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="card h-100">
+                                    <img src="imagenes/comida_2.jpg" class="card-img-top" alt="Plato de Ceviche">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Ceviche</h5>
+                                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus magni exercitationem, iusto ipsa maiores consequatur.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="card h-100">
+                                    <img src="imagenes/comida_3.jpg" class="card-img-top" alt="Causa Rellena">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Causa Rellena</h5>
+                                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="card h-100">
+                                    <img src="imagenes/comida_4.jpg" class="card-img-top" alt="Lomo Saltado">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Lomo Saltado</h5>
+                                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                      <img src="imagenes/comida_5.jpg" class="card-img-top" alt="Alfajores">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Alfajores</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+                                <div class="col"> 
+                                  <div class="card h-100">
+                                    <img src="imagenes/parihuela.jpg"  class="card-img-top" alt="Parihuela">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="card h-100">
+                                  <img src="imagenes/Chupe-de-camarones.jpg"  class="card-img-top" alt="Chupe de Camarones">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  </div>
+                                </div>
+
+                                <div class="card h-100">
+                                  <img src="imagenes/chicharron-de-pescado.jpg"  class="card-img-top" alt="Chicharron de pescado">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  </div>
+                                </div>
+
+                                <div class="card h-100">
+                                  <img src="imagenes/cocnchitas-negras.jpg"  class="card-img-top" alt="Conchitas negras">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  </div>
+                                </div>
+
+                                <div class="card h-100">
+                                  <img src="imagenes/PESCADO-A-LO-MACHO.jpg"  class="card-img-top" alt="Pescado a lo macho">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                              </div>
+
+                              </div>
+
+                            </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                          
+                        </div>
+                    </div>
+                      
+                    <div class="call-to-action text-center border-bottom border-top mt-3 mb-5 py-3">
+                        <p>Visitanos!! Te esperamos con los brazos abiertos</p>
+                        <a href="#" class="btn btn-outline-primary fw-bolder text-uppercase">Ve Nuestra tienda</a>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <section class="row noticias">
+              <div class="col-lg mb-3 mb-lg-0">
+                <div class="principal-post h-100">
+
+                  <div id="carouselExampleControls" class="carousel slide h-100" data-bs-ride="carousel">
+                    <div class="carousel-inner h-100">
+                      <div class="carousel-item active h-100">
+                        <div class="principal-post-inner h-100 d-flex align-items-end principal-post-1">
+                          <div class="principal-post-info w-100">
+                            <h4>Lorem ipsum dolor sit.</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, earum?</p>
+                            <p class="post-meta d-flex justify-content-between">
+                              <span>Paul Carlson</span>
+                              <span>23 agosto 2021</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                          <!-- SEGUNDO POST DESTACADO -->
+
+                      <div class="carousel-item h-100">
+                        <div class="principal-post-inner h-100 d-flex align-items-end principal-post-2">
+                          <div class="principal-post-info w-100">
+                            <h4>Lorem ipsum dolor sit.</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, earum?</p>
+                            <p class="post-meta d-flex justify-content-between">
+                              <span>Jhon Pascual</span>
+                              <span>29 agosto 1965</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                     
+                      
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+
+
+                </div>
+              </div>
+              <div class="col-lg d-none d-md-block">
+                <div class="row post mb-3">
+                  <div class="col-sm-4">
+                    <img class="img-fluid" src="imagenes/cuadrado_1.jpg" alt="">
+                  </div>
+                  <div class="col-sm-8">
+                    <h4>Lorem ipsum dolor sit.</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, earum?</p>
+                            <p class="post-meta d-flex justify-content-between">
+                              <span>Paul Carlson</span>
+                              <span>23 agosto 2021</span>
+                            </p>
+                  </div>
+                </div>
+
+                <div class="row post mb-3">
+                  <div class="col-sm-4">
+                    <img class="img-fluid" src="imagenes/cuadrado_2.jpg" alt="">
+                  </div>
+                  <div class="col-sm-8">
+                    <h4>Lorem ipsum dolor sit.</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, earum?</p>
+                            <p class="post-meta d-flex justify-content-between">
+                              <span>Paul Carlson</span>
+                              <span>23 agosto 2021</span>
+                            </p>
+                  </div>
+                </div>
+
+                <div class="row post">
+                  <div class="col-sm-4">
+                     <img class="img-fluid" src="imagenes/cuadrado_3.jpg" alt="">
+                  </div>
+                  <div class="col-sm-8">
+                    <h4>Lorem ipsum dolor sit.</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, earum?</p>
+                            <p class="post-meta d-flex justify-content-between">
+                              <span>Paul Carlson</span>
+                              <span>23 agosto 2021</span>
+                            </p>
+                  </div>
+                </div>
+              </div> 
+            </section>
+        </div>
+        <div class="section contact bg-dark mt-3">
+          <div class="container">
+            <div class="row justify-content-center align-items-center py-5">
+              <div class="col col-auto mb-4 mb-md-0">
+                 <p class="text-white mb-0">Necesitas ayuda? Estamos aqui!</p>
+              </div>
+              <div class="col col-auto">
+                <a href="#" class="btn btn-primary">Contáctanos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- //acá adelante BEM -->
+    <div class="container mt-5">  
+        <div class="tarjeta">  <!--BLOQUE--> 
+          <a href="#" class="tarjeta__imagen me-3">
+            <img class="tarjeta__img" src="imagenes/comida_3.jpg" alt="foto causa rellena">
+          </a>
+          <div class="tarjeta__texto">
+            <h3 class="tarjeta__titulo">
+              <a href="#" class="tarjeta__enlace">Lorem ipsum dolor sit amet.</a>
+            </h3>
+              <p class="tarjeta__resumen">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum consequuntur non esse temporibus nesciunt ipsa sed natus, eius eligendi modi.</p>
+              <a href="#" class="boton boton--absoluto">   <!--BLOQUE--> 
+                <span class="boton__texto">Saber más</span>  
+                <i class="boton__icono fas fa-arrow-right"></i>
+              </a>
+          </div>
+        </div>
+
+        <!--BLOQUE DETALLE-->
+        <div class="detalle text-center"> <!--BLOQUE-->
+          <h3 class="detalle__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas reprehenderit minus, voluptatibus cupiditate veniam nostrum?</h3>
+          <a href="#" class="boton boton--secundario mb-5">
+            <span class="boton__texto">Quiero!!</span> 
+            <i class="boton__icono fas fa-shopping-cart"></i>
+          </a>
+        </div> 
+    </div>
+    <div class="container d-flex justify-content-around mb-5">
+      <div class="carta text-center">  <!--BLOQUE-->
+        <div class="carta__texto text-center">
+          <h2 class="carta__titulo">NUESTRO PERSONAL</h2>
+          <p class="carta__parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga sit earum architecto modi, voluptates excepturi eos tempore distinctio culpa provident!</p>
+        </div>
+        <div class="carta__foto">
+          <img class="carta__img" src="imagenes/contacto_1.jpg" alt="">
+        </div>
+        <a href="#" class="boton justify-content-center mt-3">Conocelas!!</a>
+      </div>
+     
+      <div class="carta text-center">  <!--BLOQUE-->
+        <div class="carta__texto text-center">
+          <h2 class="carta__titulo">NUESTRAS PLAYAS</h2>
+          <p class="carta__parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga sit earum architecto modi, voluptates excepturi eos tempore distinctio culpa provident!</p>
+        </div>
+        <div class="carta__foto">
+          <img class="carta__img" src="imagenes/cuadrado_1.jpg" alt="">
+        </div>
+        <a href="#" class="boton boton--secundario justify-content-center mt-3">Conocelas!!</a>
+      </div>
+      
+    </div>
+
+    <section class="cocina">
+      <div class="container cocina__contenedor">
+        <figure class="cocina__foto">
+          <img class="cocina__img" src="imagenes/comida_2.jpg" alt="">
+          <figcaption class="cocina__texto">
+            <h5 class="cocina__titulo text-center">Pruebalo</h5>
+            <p class="cocina__parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime dolorem iure totam voluptas perferendis sunt!</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+   
+   <footer class="bg-primary">
+    <div class="container">
+      <div class="row justify-content-md-between align-items-center py-3">
+
+        <div class="col-md-4 text-center text-md-start order-md-0 order-1">
+          <p class="text-white mb-0"><small>&copy;Todos los derechos reservados</small></p>
+        </div>
+
+        <div class="col-md-4">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">Contacto</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 text-md-end text-center order-2 order-md-0">
+          <a href="#" class="text-white me-2">
+            <i class="fab fa-vimeo-v"></i>
+          </a>
+          <a href="#" class="text-white me-2">
+            <i class="fas fa-skull"></i>
+          </a>
+          <a href="#" class="text-white">
+            <i class="fas fa-bone"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+   </footer>                 
+          
+                 
+<script src="js/jquery.js"></script>
+<!-- Development version -->
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+
+<!-- Production version -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
